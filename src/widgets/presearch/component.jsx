@@ -8,7 +8,7 @@ export default function Component({ service }) {
   const { t } = useTranslation();
   const { widget } = service;
   let { data: resp, error } = useWidgetAPI(widget, "status", {
-    refreshInterval: 900000,
+    refreshInterval: 9000000,
   });
 
   if (error) {
@@ -22,7 +22,7 @@ export default function Component({ service }) {
         <Block label="presearch.gateway_pool" />
         <Block label="presearch.status" />
         <Block label="presearch.total_requests" />
-        <Block label="presearch.avg_reliability_score" />
+        <Block label="presearch.3" />
       </Container>
     );
   }
