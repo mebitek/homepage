@@ -8,7 +8,7 @@ export default function Component({ service }) {
   const { t } = useTranslation();
   const { widget } = service;
   let { data: resp, error } = useWidgetAPI(widget, "status", {
-    refreshInterval: 9000000,
+    refreshInterval: 900000,
   });
 
   if (error) {
